@@ -3,7 +3,7 @@
 ## 用知乎日报的api的数据接口, 使用vue和axios请求的数据,制作的一个网页版知乎日报
 
 ### 点击查看效果: [预览网页](https://zhouyijieqm.github.io/zhihudaily/dist/index.html) 
-> 用了海外的vps做跨域代理,速度很慢,最好还是请本地运行
+> 用了海外的vps做跨域代理,速度很慢,最好还是请本地运行  
 预览可能因为证书问题没显示数据,可以考虑这样做：
 ![预览图片](https://zhouyijieqm.github.io/zhihudaily/preview/pv4.png)
 
