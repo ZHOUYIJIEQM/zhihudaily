@@ -8,7 +8,7 @@
 由于知乎api跨域限制,前端不能直接用,需要先运行代理:
 > node proxy.js
 
-## Build Setup
+## 运行方式
 
 ``` bash
 # install dependencies
