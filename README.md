@@ -1,7 +1,6 @@
 # 知乎日报 vue+axios
 
-### [预览成品](https://zhouyijieqm.github.io/zhihudaily/dist/index.html) 
-
+### 成品效果查看: [预览成品](https://zhouyijieqm.github.io/zhihudaily/dist/index.html) 
 > 海外的vps,速度会很慢,可以的话请本地运行
 
 
