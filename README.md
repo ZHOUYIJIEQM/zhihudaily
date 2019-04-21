@@ -5,7 +5,8 @@
 ### 成品效果查看: [预览成品](https://zhouyijieqm.github.io/zhihudaily/dist/index.html) 
 > 海外的vps,速度会很慢,可以的话请本地运行
 
-### 由于知乎api跨域限制,前端不能直接用,需要先运行代理: node proxy.js
+### 由于知乎api跨域限制,前端不能直接用,需要先运行代理: 
+***node proxy.js***
 
 ## 运行方式
 
