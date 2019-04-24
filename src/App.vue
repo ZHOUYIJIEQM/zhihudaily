@@ -182,7 +182,13 @@
       // 获取每日推荐, 添加到数组
       getRecommendList(){
         this.isLoading = true;
-        const day = $.prevDay(this.todayTime+86400000);
+        var day = 0;
+        // 每天早上六点才更新今天的推荐
+        if(Date.now()-this.todayTime>=21600){
+          day = $.prevDay(this.todayTime+86400000);
+        }else{
+          day = $.prevDay(this.todayTime);
+        }
         $.ajax.get('news/before/'+day)
         .then(res=>{
           this.recommendList.push(res);

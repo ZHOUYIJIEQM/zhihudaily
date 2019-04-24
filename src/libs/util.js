@@ -1,8 +1,10 @@
 import axios from 'axios'
 
 const Util = {
-  imgPath: 'http://127.0.0.1:8011/img/',
-  apiPath: 'http://127.0.0.1:8010',
+  imgPath: 'https://103.114.162.64:8011/img/',
+  apiPath: 'https://103.114.162.64:8010',
+  // imgPath: 'http://127.0.0.1:8011/img/',
+  // apiPath: 'http://127.0.0.1:8010',
 };
 // 获取今日0点0分0秒0毫秒的时间戳
 Util.getTodayTime = function(){
@@ -36,6 +38,22 @@ Util.formatDay = function(date){
     :date.substr(6, 2)
   return `${year}年${month}月${day}日`
 }
+// 计算滚动条宽度
+Util.getScrollWidth = function(){
+  var scroll, noScroll, oDiv;
+  oDiv = document.createElement('DIV');
+  oDiv.style.cssText="position:absolute; top:-1000px; width:100px; height:100px; overflow:hidden;";
+  noScroll = document.body.appendChild(oDiv).clientWidth;
+  oDiv.style.overflowY="scroll";
+  scroll = oDiv.clientWidth;
+  document.body.removeChild(oDiv);
+  return noScroll - scroll;
+}
+// 获取样式
+Util.getStyle = function(obj, attr) {
+  return obj.currentStyle ? obj.currentStyle[attr] : getComputedStyle(obj, null)[attr];
+}
+
 // 创建实例时设置配置的默认值
 Util.ajax = axios.create({
   baseURL: Util.apiPath
