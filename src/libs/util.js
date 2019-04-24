@@ -1,10 +1,8 @@
 import axios from 'axios'
 
 const Util = {
-  imgPath: 'https://103.114.162.64:8011/img/',
-  apiPath: 'https://103.114.162.64:8010',
-  // imgPath: 'http://127.0.0.1:8011/img/',
-  // apiPath: 'http://127.0.0.1:8010',
+  imgPath: 'http://127.0.0.1:8011/img/',
+  apiPath: 'http://127.0.0.1:8010',
 };
 // 获取今日0点0分0秒0毫秒的时间戳
 Util.getTodayTime = function(){
