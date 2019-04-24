@@ -183,11 +183,14 @@
       getRecommendList(){
         this.isLoading = true;
         var day = 0;
-        // 每天早上六点才更新今天的推荐
-        if(Date.now()-this.todayTime>=21600){
-          day = $.prevDay(this.todayTime+86400000);
-        }else{
+        // 每天早上8点才更新今天的推荐
+        if(Date.now()-this.todayTime<=28800000){
           day = $.prevDay(this.todayTime);
+          this.todayTime = this.todayTime -86400000;
+          // console.log(day, '8点前')
+        }else{
+          day = $.prevDay(this.todayTime+86400000);
+          // console.log(day, '8点后')
         }
         $.ajax.get('news/before/'+day)
         .then(res=>{
@@ -196,7 +199,8 @@
           this.isLoading = false;
         })
         .catch(()=>{
-          console.log('每日推荐文章获取出错')
+          console.log('每日推荐文章获取出错');
+          alert('每日推荐文章获取出错');
         })
       },
       // 获取日报栏目
@@ -207,6 +211,7 @@
         })
         .catch(()=>{
           console.log('日报栏目获取出错');
+          alert('日报栏目获取出错');
         })
       },
       // 获取日报栏目对应的文章
@@ -217,7 +222,8 @@
           this.sectionsList = res.stories;
         })
         .catch(()=>{
-          console.log('日报栏目下的文章获取出错')
+          console.log('日报栏目下的文章获取出错');
+          alert('日报栏目下的文章获取出错');
         })
       },
       // 将 20190410 格式转为 2019年4月10日 这样的格式

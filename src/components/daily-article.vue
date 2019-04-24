@@ -104,15 +104,16 @@
         .then(res=>{
           // console.log('文章\n', JSON.stringify(res, null, ' '))
           res.body = res.body
-            .replace(/src="https:/g, 'src="'+$.imgPath+'https:');
+            .replace(/src="https:\/\/pic/g, 'src="'+$.imgPath+'https://pic');
           res.body = res.body
-            .replace(/src="http:/g, 'src="'+$.imgPath+'http:');
+            .replace(/src="http:\/\/pic/g, 'src="'+$.imgPath+'http://pic');
           this.data = res;
           window.scrollTo(0, 0);
           this.getComments();
         })
         .catch(()=>{
-          console.log('文章获取出错！')
+          console.log('文章获取出错！');
+          alert('文章获取出错！');
         })
       },
       // 获取短评论
@@ -127,7 +128,8 @@
           })
         })
         .catch(()=>{
-          console.log('短评获取出错！')
+          console.log('短评获取出错！');
+          alert('短评获取出错！')
         })
       },
     },
