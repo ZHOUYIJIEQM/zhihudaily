@@ -32,3 +32,5 @@ npm run build --report
 ![预览图片](https://zhouyijieqm.github.io/zhihudaily/preview/pv0.png)
 ![预览图片](https://zhouyijieqm.github.io/zhihudaily/preview/pv1.png)
 ![预览图片](https://zhouyijieqm.github.io/zhihudaily/preview/pv3.png)
+
+> 代码参考《Vue.js实战》
