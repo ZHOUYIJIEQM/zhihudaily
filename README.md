@@ -10,6 +10,7 @@
 ### 知乎日报api: [参考](https://github.com/izzyleung/ZhihuDailyPurify/wiki/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5-API-%E5%88%86%E6%9E%90)
 
 ### 由于知乎api跨域限制,前端不能直接用,需要先运行代理: 
+### ***cd zhihudaily***
 ### ***node proxy.js***
 
 ## 运行方式
