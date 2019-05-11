@@ -192,6 +192,7 @@
           day = $.prevDay(this.todayTime+86400000);
           // console.log(day, '8点后')
         }
+        console.log(day)
         $.ajax.get('news/before/'+day)
         .then(res=>{
           this.recommendList.push(res);

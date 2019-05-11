@@ -1,8 +1,10 @@
 import axios from 'axios'
 
 const Util = {
-  imgPath: 'http://127.0.0.1:8011/img/',
-  apiPath: 'http://127.0.0.1:8010',
+  imgPath: 'https://103.114.162.64:8011/img/',
+  apiPath: 'https://103.114.162.64:8010',
+  // imgPath: 'http://127.0.0.1:8011/img/',
+  // apiPath: 'http://127.0.0.1:8010',
 };
 // 获取今日0点0分0秒0毫秒的时间戳
 Util.getTodayTime = function(){
@@ -20,7 +22,7 @@ Util.prevDay = function(timestamp=(Date.now())){
   const month = date.getMonth()+1 < 10
     ? '0' + (date.getMonth()+1)
     : date.getMonth()+1;
-  const day = date.getDate()+1 < 10
+  const day = date.getDate() < 10
     ? '0' + date.getDate()
     : date.getDate();
   return year + '' + month + '' + day;
