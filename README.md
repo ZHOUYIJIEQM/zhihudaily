@@ -1,11 +1,7 @@
 # 知乎日报 vue+axios
 
 ### 用知乎日报的api的数据接口, 使用vue和axios请求的数据,制作的一个网页版知乎日报
-
-### 点击查看效果: [预览网页](https://zhouyijieqm.github.io/zhihudaily/dist/index.html) 
-> 用了海外的vps做跨域代理,速度很慢,最好还是请本地运行  
-预览可能因为证书问题没显示数据,可以考虑这样做：
-![预览图片](https://zhouyijieqm.github.io/zhihudaily/preview/pv4.png)
+### 内容包含知乎每日推荐和各个日报栏目
 
 ### 知乎日报api: [参考](https://github.com/izzyleung/ZhihuDailyPurify/wiki/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5-API-%E5%88%86%E6%9E%90)
 
